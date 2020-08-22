@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type and Furious</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+  </head>
+
+  <body class="bg-dark text-white">
+    <div class="container-fluid text-center bg-warning py-4 text-white">
+      <h1 class="display-4">Type and Furious</h1>
+      <p class="lead">The Ultimate typing game</p>
+      <div class="form-group mt-3">
+        <label for="difficulty">
+          <h3 class="text-dark">Choose Difficulty</h3>
+        </label>
+        <select class="form-control-sm" id="difficulty">
+          <option id="easy">Easy</option>
+          <option id="medium">Medium</option>
+          <option id="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <p class="mt-5 lead">
+            Type the Given Word Within
+            <span class="text-warning" id="seconds">5</span> Seconds:
+          </p>
+          <h2 class="display-4 mb-5" id="current-word">javascript</h2>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Start Typing..."
+            id="word-input"
+            autofocus
+          />
+          <h5 class="mt-3 display-4" id="message"></h5>
+
+          <div class="row mt-5">
+            <div class="col-md-6 mx-auto">
+              <h3>
+                Time Left:
+                <span id="time">0</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <h3>
+                Score:
+                <span id="score">0</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12 mx-auto mb-5">
+              <div class="card card-body">
+                <h3 class="card-title text-dark">Instructions</h3>
+                <p class="lead text-muted">
+                  Type each word in the given amount of seconds to score. To
+                  play again, type the current word, your score will reset.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
